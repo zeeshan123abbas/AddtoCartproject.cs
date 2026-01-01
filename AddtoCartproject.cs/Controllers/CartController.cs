@@ -92,6 +92,7 @@ namespace AddtoCartproject.cs.Controllers
         public IActionResult OrderSuccess()
         {
             var age= 21;
+            var a = 10;
             
             return View();
         }
