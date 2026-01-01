@@ -91,6 +91,8 @@ namespace AddtoCartproject.cs.Controllers
         }
         public IActionResult OrderSuccess()
         {
+            var age= 21;
+            
             return View();
         }
     }
