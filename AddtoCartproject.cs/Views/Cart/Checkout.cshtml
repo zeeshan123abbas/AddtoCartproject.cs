@@ -1,0 +1,12 @@
+﻿@model List<CartItem>
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+<p>Total Items: @Model.Sum(x => x.Quantity)</p>
+<p>Total Amount: @Model.Sum(x => x.Price * x.Quantity)</p>
+
+<form asp-action="PlaceOrder" method="post">
+    <button type="submit" class="btn btn-primary">Place Order</button>
+</form>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.35906.104 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddtoCartproject.cs", "AddtoCartproject.cs\AddtoCartproject.cs.csproj", "{7AFE51AA-4DB5-4163-B296-E2E0149D54A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AFE51AA-4DB5-4163-B296-E2E0149D54A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFE51AA-4DB5-4163-B296-E2E0149D54A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFE51AA-4DB5-4163-B296-E2E0149D54A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFE51AA-4DB5-4163-B296-E2E0149D54A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {038CCE66-CDB7-4D41-8E89-CD6AD586D828}
+	EndGlobalSection
+EndGlobal

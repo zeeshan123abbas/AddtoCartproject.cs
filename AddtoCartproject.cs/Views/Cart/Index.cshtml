@@ -1,0 +1,43 @@
+﻿@model List<CartItem>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (!Model.Any())
+{
+    <p>Cart is empty</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Price</td>
+                <td>
+                    <a asp-action="Decrease" asp-route-id="@item.ProductId">-</a>
+                    @item.Quantity
+                    <a asp-action="Increase" asp-route-id="@item.ProductId">+</a>
+                </td>
+                <td>@(item.Price* item.Quantity)</td>
+                <td>
+                    <a asp-action="Remove" asp-route-id="@item.ProductId">Remove</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <p>Total Items: @Model.Sum(x => x.Quantity)</p>
+    <p>Total Amount: @Model.Sum(x => x.Price * x.Quantity)</p>
+    <a asp-action="Checkout" class="btn btn-success">Checkout</a>
+}
